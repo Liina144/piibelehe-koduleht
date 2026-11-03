@@ -70,7 +70,7 @@
     .hero { padding: 36px 0 76px; }
     .hero-image {
       min-height: 510px; border-radius: var(--radius-lg); overflow: hidden; position: relative;
-      background: linear-gradient(90deg, rgba(20,31,21,.66), rgba(20,31,21,.12)), url('images/aed.jpg') center/cover no-repeat;
+      background: linear-gradient(90deg, rgba(20,31,21,.66), rgba(20,31,21,.12)), url('images/Outdoor%20kitchen.jpg') center/cover no-repeat;
       display: flex; align-items: center;
     }
     .hero-content { max-width: 650px; padding: 64px clamp(25px, 7vw, 88px); color: white; }
@@ -101,6 +101,8 @@
     .card p { margin: 0 0 14px; color: var(--color-text-muted); }
     .tag { display: inline-block; margin: 0 5px 7px 0; padding: 4px 9px; border-radius: 30px; background: #edf1e9; color: var(--color-primary-dark); font-size: 13px; font-weight: 600; }
 
+    .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 22px; }
+    .photo-strip img { width: 100%; height: 150px; object-fit: cover; border-radius: var(--radius-md); }
     .camping-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
     .camping-card { min-height: 330px; padding: 30px; border-radius: var(--radius-lg); color: white; background-position: center; background-size: cover; position: relative; overflow: hidden; display: flex; align-items: end; }
     .camping-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(19,31,20,.82), rgba(19,31,20,.08)); }
@@ -108,8 +110,8 @@
     .camping-card h3 { margin: 0 0 8px; font-size: 29px; }
     .camping-card p { margin: 0 0 14px; }
     .camping-card a { color: white; font-weight: 700; text-underline-offset: 4px; }
-    .caravan { background-image: url('images/karavan.jpg'); }
-    .tent { background-image: url('images/telkimine.jpg'); }
+    .caravan { background-image: url('images/Outdoor%20kitchen.jpg'); }
+    .tent { background-image: url('images/Shared%20bathroom%202.jpg'); }
 
     .garden { background: var(--color-surface-muted); }
     .garden-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
@@ -157,6 +159,7 @@
       .hero-content p { font-size: 17px; }
       section { padding: 55px 0; }
       .cards, .camping-grid, .facts { grid-template-columns: 1fr; }
+      .photo-strip { grid-template-columns: repeat(2, 1fr); }
       .card img { height: 230px; }
       .camping-card { min-height: 300px; }
       .footer-grid { flex-direction: column; align-items: flex-start; }
@@ -167,7 +170,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#avaleht" aria-label="Piibelehe avaleht">
-        <img src="Piibelehe logo.svg" alt="Piibelehe logo">
+        <img src="Piibelehe%20logo.svg" alt="Piibelehe logo">
         <span><span class="brand-name">Piibelehe</span><span class="brand-sub">Guesthouse · Caravan Park · Camping</span></span>
       </a>
       <button class="menu-toggle" aria-label="Ava menüü" aria-expanded="false" onclick="toggleMenu()">Menüü ☰</button>
@@ -208,7 +211,7 @@
           <p>Siin saad puhata omas tempos ning samal ajal avastada Kuressaaret ja Saaremaad. Kesklinn jääb meist umbes kahe kilomeetri kaugusele.</p>
           <a class="text-link" href="#kontakt">Võta meiega ühendust →</a>
         </div>
-        <img class="intro-photo" src="images/aed.jpg" alt="Piibelehe roheline ja lilleline aed">
+        <img class="intro-photo" src="images/Outdoor%20kitchen.jpg" alt="Piibelehe roheline ja lilleline aed">
       </div>
     </section>
 
@@ -221,7 +224,7 @@
         </div>
         <div class="cards">
           <article class="card">
-            <img src="images/kulaliskorter.jpg" alt="Piibelehe külaliskorteri interjöör">
+            <img src="images/2-bedroom-apartment_15.jpg" alt="Piibelehe külaliskorteri interjöör">
             <div class="card-body">
               <h3>Külaliskorter</h3>
               <p>Kaks magamistuba ja kõik vajalik mugavaks peatumiseks.</p>
@@ -230,7 +233,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/arkel-1.jpg" alt="Ärkli 1 tuba">
+            <img src="images/Rooftop%20Room%201%20-%201.jpg" alt="Ärkli 1 tuba">
             <div class="card-body">
               <h3>Ärkli 1</h3>
               <p>Katusealune tuba laia voodi ja privaatse pesuruumiga. Köök asub koridoris.</p>
@@ -239,7 +242,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/arkel-2.jpg" alt="Ärkli 2 tuba">
+            <img src="images/Rooftop%20Room%202%20-%202.jpg" alt="Ärkli 2 tuba">
             <div class="card-body">
               <h3>Ärkli 2</h3>
               <p>Kahe eraldi voodiga katusealune tuba, privaatne pesuruum ja köök toas.</p>
@@ -248,7 +251,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/juuniorsviit.jpg" alt="Piibelehe juuniorsviit">
+            <img src="images/Junior%20Suite%20-%203.jpg" alt="Piibelehe juuniorsviit">
             <div class="card-body">
               <h3>Juuniorsviit</h3>
               <p>Lai voodi, diivanvoodi, kööginurk ja privaatne terrass.</p>
@@ -257,7 +260,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/bangalo.jpg" alt="Piibelehe bangalo">
+            <img src="images/Bungalow%20inside.jpg" alt="Piibelehe bangalo">
             <div class="card-body">
               <h3>Bangalo</h3>
               <p>Lai voodi ja diivanvoodi. Külaliste kasutada on ühine väliköök ja pesuruumid.</p>
@@ -266,7 +269,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="images/aed.jpg" alt="Piibelehe aia puhkenurk">
+            <img src="images/Outdoor%20kitchen.jpg" alt="Piibelehe aia puhkenurk">
             <div class="card-body">
               <h3>Ühine aed ja puhkealad</h3>
               <p>Naudi rohelust, istu katusealuses väliköögis või leia endale päikeseline nurgake.</p>
@@ -274,6 +277,12 @@
               <span class="tag">Roheline aed</span>
             </div>
           </article>
+        </div>
+        <div class="photo-strip" aria-label="Piibelehe majutuse lisavaated">
+          <img src="images/Rooftop%20Room%201%20-%202.jpg" alt="Ärkli toa vaade">
+          <img src="images/Rooftop%20Room%201%20-%206.jpg" alt="Ärkli toa detail">
+          <img src="images/Rooftop%20Room%202%20-%204.jpg" alt="Teise katusealuse toa vaade">
+          <img src="images/Rooftop%20Room%202%20-%207.jpg" alt="Teise katusealuse toa detail">
         </div>
       </div>
     </section>
@@ -314,7 +323,7 @@
           <p>Meie jaoks on oluline, et iga külaline tunneks end oodatuna. Soovime pakkuda lihtsat ja mõnusat peatuspaika, kus saab puhata ning Saaremaad avastada.</p>
           <a class="text-link" href="#kontakt">Tule meile külla →</a>
         </div>
-        <img src="images/aed-detail.jpg" alt="Lilled ja rohelus Piibelehe aias">
+        <img src="images/Outdoor%20kitchen.jpg" alt="Lilled ja rohelus Piibelehe aias">
       </div>
       <div class="container facts">
         <div class="fact"><strong>Alates 1997</strong><span>Külalisi vastu võtnud pereettevõte</span></div>
